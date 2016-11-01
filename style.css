@@ -1,0 +1,128 @@
+body, html {
+    
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    
+    background: red;
+    
+}
+
+body.lb-dropdown-open {
+ 
+/*    overflow-y: hidden;*/
+    
+}
+
+
+div.lb-dropdown {
+    
+    background-color: #FFF;
+    line-height: 30px;
+    margin: 0 10px;
+    font-family: 'proxima-nova-bold', sans-serif;
+    height: 30px;
+    font-size: 14px;
+    color: #000;
+    font-weight: bold;
+    letter-spacing: 1px;
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    cursor: pointer;
+    
+}
+
+div.lb-dropdown-selected {
+
+    box-shadow: inset 0px 1px 2px #bbb;
+    padding: 0 50px 0 30px;
+    box-sizing: border-box;
+    display: inline-block;
+    cursor: pointer;
+    background-image: url("bg-select-arrow-closed.png");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    
+}
+
+div.lb-dropdown.lb-dropdown-open div.lb-dropdown-selected { 
+    
+    background-image: url("bg-select-arrow-open.png");
+    
+}
+
+ul.lb-dropdown-options {
+    
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden;
+    max-height: 0;
+    box-sizing: border-box;
+    transition: max-height 300ms;
+    background: rgba(255,255,255,1);
+    box-shadow: 0 0 4px rgba(0,0,0,0.6);
+    border-radius: 2px;
+    overflow-y: auto;
+    position: absolute;
+    top: 30px;
+    cursor: pointer;
+    
+}
+
+ul.lb-dropdown-options.direction-up {
+ 
+    top: auto;
+    bottom: 30px;
+    
+}
+
+div.lb-dropdown.lb-dropdown-open .lb-dropdown-options {
+    
+    max-height: 500px; 
+    min-width: 100px;
+    
+}
+
+li.lb-dropdown-option {
+    
+    line-height: 22px;
+    margin: 0;
+    padding: 2px 30px;
+    
+}
+
+li.lb-dropdown-option.selected {
+    
+    background: #eee;
+    
+}
+
+li.lb-dropdown-option:hover {
+    
+    background: #eee;
+    
+}
+
+li.lb-dropdown-option:first-child {
+    
+    padding-top: 10px;
+    
+}
+
+li.lb-dropdown-option:last-child {
+    
+    padding-bottom: 10px;
+    
+}
+
+li.lb-dropdown-option a {
+ 
+    color: #000 !important;
+    text-decoration: none;
+    
+}
